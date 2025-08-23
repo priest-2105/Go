@@ -1,15 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 
-var i int = 42
+// var i float32 = 42
 
-func main (){
+// func main (){
 
-	fmt.Printf("%v, %T", i, i)
+// 	fmt.Printf("%v, %T", i, i)
 
-}
+// }
 
 // func main(){
 
@@ -23,3 +26,48 @@ func main (){
 	// fmt.Println(k)
 	// fmt.Printf("%v, %T", k, k)
 // }
+
+
+
+// var (
+// 	actorName string = "Elizabeth olsen"
+// 	companion string = "Frank smith"
+// 	doctorNumber int = 3
+// 	season int = 11
+// )
+
+// var (
+// 	 counter int = 0
+// )
+
+
+// var i int = 27
+
+// func main () {
+// 	 var i int = 42
+// 	//  i = 13
+// 	 fmt.Println(i)
+// }
+
+
+
+
+// func main () {
+// 	 var i int = 42
+// 	 j := 13
+
+// 	 fmt.Println(i)
+// }
+
+
+
+func main (){
+
+	var i int = 42
+	fmt.Printf("%v, %T/n", i, i)
+
+	var j string
+	j = strconv.Itoa(i)
+	fmt.Printf("%v, %T/n", j, j)
+
+}
