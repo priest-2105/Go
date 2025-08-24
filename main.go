@@ -96,15 +96,15 @@ import (
 // }
 
 
-func main() {
-	a := 10.2
-	b := 3.3
-	fmt.Println(a + b)
-	fmt.Println(a - b)
-	fmt.Println(a * b)
-	fmt.Println(a / b)
-	// fmt.Println(a % b)
-}
+// func main() {
+// 	a := 10.2
+// 	b := 3.3
+// 	fmt.Println(a + b)
+// 	fmt.Println(a - b)
+// 	fmt.Println(a * b)
+// 	fmt.Println(a / b)
+// 	// fmt.Println(a % b)
+// }
 
 // func main () {
 // 	var a  int = 10
@@ -130,3 +130,10 @@ func main() {
 // 	fmt.Println(a << 3)
 // 	fmt.Println(a >> 3)
 // }
+
+
+func main (){
+	var n complex64 = 1 + 2i
+	fmt.Printf("%v, %T\n", real(n), real(n))
+	fmt.Printf("%v, %T\n", imag(n), imag(n))
+}
