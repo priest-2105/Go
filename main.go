@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"strconv"
+	// "strconv"
 )
 
 
@@ -61,13 +61,26 @@ import (
 
 
 
-func main (){
+// func main (){
 
-	var i int = 42
-	fmt.Printf("%v, %T/n", i, i)
+// 	var i int = 42
+// 	fmt.Printf("%v, %T/n", i, i)
 
-	var j string
-	j = strconv.Itoa(i)
-	fmt.Printf("%v, %T/n", j, j)
+// 	var j string
+// 	j = strconv.Itoa(i)
+// 	fmt.Printf("%v, %T/n", j, j)
+
+// }
+
+// func main() {
+// 	var n bool = false
+// 	fmt.Printf("%v, %T\n", n, n)
+// }
+
+func main() {
+	n := 1 == 1
+	m := 1 == 2
+	fmt.Printf("%v, %T\n", n, n)
+	fmt.Printf("%v, %T\n", m, m)
 
 }
