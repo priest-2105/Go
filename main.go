@@ -94,3 +94,39 @@ import (
 // 	fmt.Printf("%v, %T\n", n, n)
 
 // }
+
+
+// func main() {
+// 	a := 10
+// 	b := 3
+// 	fmt.Println(a + b)
+// 	fmt.Println(a - b)
+// 	fmt.Println(a * b)
+// 	fmt.Println(a / b)
+// 	fmt.Println(a % b)
+// }
+
+// func main () {
+// 	var a  int = 10
+// 	var b int8 = 3
+// 	fmt.Println(int8(a) + b)
+// }
+
+
+// bit operators 
+
+// func main() {
+// 	a := 10
+// 	b := 3
+// 	fmt.Println(a & b)
+// 	fmt.Println(a | b)
+// 	fmt.Println(a ^ b)
+// 	fmt.Println(a &^ b)
+// }
+
+
+func main() {
+	a := 8
+	fmt.Println(a << 3)
+	fmt.Println(a >> 3)
+}
