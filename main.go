@@ -77,10 +77,20 @@ import (
 // 	fmt.Printf("%v, %T\n", n, n)
 // }
 
-func main() {
-	n := 1 == 1
-	m := 1 == 2
-	fmt.Printf("%v, %T\n", n, n)
-	fmt.Printf("%v, %T\n", m, m)
+// func main() {
 
-}
+// 	n := 1 == 1
+// 	m := 1 == 2
+// 	fmt.Printf("%v, %T\n", n, n)
+// 	fmt.Printf("%v, %T\n", m, m)
+
+// }
+
+
+
+// func main() {
+	
+// 	var n uint16 = 42
+// 	fmt.Printf("%v, %T\n", n, n)
+
+// }
