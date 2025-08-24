@@ -96,15 +96,15 @@ import (
 // }
 
 
-// func main() {
-// 	a := 10
-// 	b := 3
-// 	fmt.Println(a + b)
-// 	fmt.Println(a - b)
-// 	fmt.Println(a * b)
-// 	fmt.Println(a / b)
-// 	fmt.Println(a % b)
-// }
+func main() {
+	a := 10.2
+	b := 3.3
+	fmt.Println(a + b)
+	fmt.Println(a - b)
+	fmt.Println(a * b)
+	fmt.Println(a / b)
+	// fmt.Println(a % b)
+}
 
 // func main () {
 // 	var a  int = 10
@@ -125,8 +125,8 @@ import (
 // }
 
 
-func main() {
-	a := 8
-	fmt.Println(a << 3)
-	fmt.Println(a >> 3)
-}
+// func main() {
+// 	a := 8
+// 	fmt.Println(a << 3)
+// 	fmt.Println(a >> 3)
+// }
