@@ -132,8 +132,20 @@ import (
 // }
 
 
+// func main (){
+// 	var n complex64 = 1 + 2i
+// 	fmt.Printf("%v, %T\n", real(n), real(n))
+// 	fmt.Printf("%v, %T\n", imag(n), imag(n))
+// }
+
+
+
+// func main (){
+// 	var n complex64 = complex(5, 12)
+// 	fmt.Printf("%v, %T\n", n, n)
+// } 
+
 func main (){
-	var n complex64 = 1 + 2i
-	fmt.Printf("%v, %T\n", real(n), real(n))
-	fmt.Printf("%v, %T\n", imag(n), imag(n))
+	s := "This is a string"
+	fmt.Printf("%v, %T\n", string(s[2]), s[2])
 }
