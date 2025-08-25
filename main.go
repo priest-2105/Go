@@ -171,3 +171,73 @@ import (
 // }
 
 
+
+// func main(){
+// 	const a int = 42
+// 	var b int16 = 27
+// 	fmt.Printf("%v, %T\n", a + b, a)
+// }
+
+// const (
+// 	a = iota
+// 	b = iota
+// 	c = iota
+// )
+
+// func main(){
+// 	fmt.Printf("%v\n", a)
+// 	fmt.Printf("%v\n", b)
+// 	fmt.Printf("%v\n", c)
+// }
+
+// const (
+// 	a = iota
+// 	b
+// 	c
+// )
+
+// const (
+// 	 a2 = iota
+// )
+
+// func main(){
+// 	fmt.Printf("%v\n", a)
+// 	fmt.Printf("%v\n", b)
+// 	fmt.Printf("%v\n", c)
+// 	fmt.Printf("%v\n", a2)
+// }
+
+
+
+
+// const (
+// 	errorSpecialist = iota
+// 	catSpecialist 
+// 	dogSpecialist
+// 	snakeSpecialist
+// )
+
+// func main() {
+// 	  var specialistType int
+// 	  fmt.Printf("%v\n", specialistType == catSpecialist)
+// }
+
+
+const (
+	_ = iota
+	kB = 1 << (10 * iota)
+	MB
+	GB
+	TB
+	PB
+	EB
+	ZB
+	YB
+)
+
+func main() {
+
+	fileSize := 4000000000.
+	fmt.Printf("%.2fGB", fileSize/GB)
+
+}
