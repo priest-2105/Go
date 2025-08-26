@@ -223,21 +223,33 @@ import (
 // }
 
 
-const (
-	_ = iota
-	kB = 1 << (10 * iota)
-	MB
-	GB
-	TB
-	PB
-	EB
-	ZB
-	YB
-)
+// const (
+// 	_ = iota
+// 	kB = 1 << (10 * iota)
+// 	MB
+// 	GB
+// 	TB
+// 	PB
+// 	EB
+// 	ZB
+// 	YB
+// )
 
-func main() {
+// func main() {
 
-	fileSize := 4000000000.
-	fmt.Printf("%.2fGB", fileSize/GB)
+// 	fileSize := 4000000000.
+// 	fmt.Printf("%.2fGB", fileSize/GB)
 
+// }
+
+
+
+func main (){
+	    // grade1 := 97
+	    // grade2 := 98
+	    // grade3 := 45
+
+		grades := [3]int{ 97, 85, 93}
+
+		fmt.Println("Grades: %v", grades)
 }
