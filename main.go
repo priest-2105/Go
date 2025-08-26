@@ -5,7 +5,6 @@ import (
 	// "strconv"
 )
 
-
 // var i float32 = 42
 
 // func main (){
@@ -16,18 +15,16 @@ import (
 
 // func main(){
 
-	// var i int
-	// i = 42
-	// var j float32 = 27
-	// k := 99.0
+// var i int
+// i = 42
+// var j float32 = 27
+// k := 99.0
 
-	// fmt.Println(i)
-	// fmt.Println(j)
-	// fmt.Println(k)
-	// fmt.Printf("%v, %T", k, k)
+// fmt.Println(i)
+// fmt.Println(j)
+// fmt.Println(k)
+// fmt.Printf("%v, %T", k, k)
 // }
-
-
 
 // var (
 // 	actorName string = "Elizabeth olsen"
@@ -40,7 +37,6 @@ import (
 // 	 counter int = 0
 // )
 
-
 // var i int = 27
 
 // func main () {
@@ -49,17 +45,12 @@ import (
 // 	 fmt.Println(i)
 // }
 
-
-
-
 // func main () {
 // 	 var i int = 42
 // 	 j := 13
 
 // 	 fmt.Println(i)
 // }
-
-
 
 // func main (){
 
@@ -86,15 +77,12 @@ import (
 
 // }
 
-
-
 // func main() {
-	
+
 // 	var n uint16 = 42
 // 	fmt.Printf("%v, %T\n", n, n)
 
 // }
-
 
 // func main() {
 // 	a := 10.2
@@ -112,8 +100,7 @@ import (
 // 	fmt.Println(int8(a) + b)
 // }
 
-
-// bit operators 
+// bit operators
 
 // func main() {
 // 	a := 10
@@ -124,13 +111,11 @@ import (
 // 	fmt.Println(a &^ b)
 // }
 
-
 // func main() {
 // 	a := 8
 // 	fmt.Println(a << 3)
 // 	fmt.Println(a >> 3)
 // }
-
 
 // func main (){
 // 	var n complex64 = 1 + 2i
@@ -138,18 +123,15 @@ import (
 // 	fmt.Printf("%v, %T\n", imag(n), imag(n))
 // }
 
-
-
 // func main (){
 // 	var n complex64 = complex(5, 12)
 // 	fmt.Printf("%v, %T\n", n, n)
-// } 
+// }
 
 // func main (){
 // 	s := "This is a string"
 // 	fmt.Printf("%v, %T\n", string(s[2]), s[2])
 // }
-
 
 // func main(){
 // 	    const myConst int = 42
@@ -163,14 +145,12 @@ import (
 // 	const b string = "foo"
 // 	const c float32 = 3.14
 // 	const d bool = true
-	
+
 //     fmt.Printf("%v\n", a)
 //     fmt.Printf("%v\n", b)
 //     fmt.Printf("%v\n", c)
 //     fmt.Printf("%v\n", d)
 // }
-
-
 
 // func main(){
 // 	const a int = 42
@@ -207,12 +187,9 @@ import (
 // 	fmt.Printf("%v\n", a2)
 // }
 
-
-
-
 // const (
 // 	errorSpecialist = iota
-// 	catSpecialist 
+// 	catSpecialist
 // 	dogSpecialist
 // 	snakeSpecialist
 // )
@@ -221,7 +198,6 @@ import (
 // 	  var specialistType int
 // 	  fmt.Printf("%v\n", specialistType == catSpecialist)
 // }
-
 
 // const (
 // 	_ = iota
@@ -242,14 +218,67 @@ import (
 
 // }
 
+// func main (){
+// 	    // grade1 := 97
+// 	    // grade2 := 98
+// 	    // grade3 := 45
+
+// 		grades := [3]int{ 97, 85, 93}
+
+// 		fmt.Printf("Grades: %v", grades)
+// }
+
+// func main() {
+// 	var students [3]string
+// 	fmt.Printf("Grades: %v", students)
+// 	students[0] = "lisa"
+// 	students[1] = "ahmed"
+// 	students[2] = "arnold"
+
+// 	fmt.Printf("Students: %v", students)
+// 	fmt.Printf("Number of Student: %v\n", len(students))
+// }
 
 
-func main (){
-	    // grade1 := 97
-	    // grade2 := 98
-	    // grade3 := 45
+// func main() {
+// 	a := [...]int{1, 2, 3}
+// 	b := a
+// 	b[1] = 5
+// 	fmt.Println(a)
+// 	fmt.Println(b)
+// }
 
-		grades := [3]int{ 97, 85, 93}
 
-		fmt.Println("Grades: %v", grades)
+// func main() {
+// 	a := [...]int{1, 2, 3}
+// 	b := &a
+// 	b[1] = 5
+// 	fmt.Println(a)
+// 	fmt.Println(b)
+// }
+
+
+// func main() {
+// 	a := []int{1, 2, 3}
+// 	// b := &a
+// 	// b[1] = 5
+// 	fmt.Println(a)
+// 	// fmt.Println(b)
+// 	fmt.Printf("Length: %v\n", len(a))
+// 	fmt.Printf("Capacity: %v\n", cap(a))
+// }
+
+
+func main () {
+	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	b := a[:]
+	c := a[3:]
+	d := a[:6]
+	e := a[3:6]
+	a[5] = 42
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	fmt.Println(d)
+	fmt.Println(e)
 }
