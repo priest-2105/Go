@@ -294,5 +294,9 @@ func main() {
 		"Ohio": 39250017,
 	}
 	// m := map[[3]int]string{}
-	fmt.Println(statePoplations)
+	// delete(statePoplations, "Georgia")
+	// fmt.Println(statePoplations)
+	// fmt.Println(statePoplations["Georgia"])
+	pop , ok := statePoplations["Ohio"]
+	fmt.Println(pop, ok)
 }
