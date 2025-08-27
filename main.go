@@ -283,7 +283,7 @@ import (
 // 	fmt.Println(e)
 // }
 func main() {
-	statePoplations := make(map[string]int, 10)
+	// statePoplations := make(map[string]int, 10)
 	statePoplations := map[string]int{
 		"California": 39250017,
 		"Texas": 39250017,
