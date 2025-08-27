@@ -269,16 +269,30 @@ import (
 // }
 
 
-func main () {
-	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-	b := a[:]
-	c := a[3:]
-	d := a[:6]
-	e := a[3:6]
-	a[5] = 42
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(c)
-	fmt.Println(d)
-	fmt.Println(e)
+// func main () {
+// 	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+// 	b := a[:]
+// 	c := a[3:]
+// 	d := a[:6]
+// 	e := a[3:6]
+// 	a[5] = 42
+// 	fmt.Println(a)
+// 	fmt.Println(b)
+// 	fmt.Println(c)
+// 	fmt.Println(d)
+// 	fmt.Println(e)
+// }
+func main() {
+	statePoplations := make(map[string]int, 10)
+	statePoplations := map[string]int{
+		"California": 39250017,
+		"Texas": 39250017,
+		"Florida": 39250017,
+		"New York": 39250017,
+		"Peennsylvania": 39250017,
+		"Illinois": 39250017,
+		"Ohio": 39250017,
+	}
+	// m := map[[3]int]string{}
+	fmt.Println(statePoplations)
 }
