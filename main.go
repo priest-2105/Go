@@ -308,28 +308,68 @@ import (
 // }
 
 
-func main (){
-	 number := 50
-	 guess := 990
+// func main (){
+// 	 number := 50
+// 	 guess := 990
 
-	 if guess < 1 || guess >  100 {
-		fmt.Println("The guess must be between 1 and 100 !")
-	 }
+// 	 if guess < 1 || guess >  100 {
+// 		fmt.Println("The guess must be between 1 and 100 !")
+// 	 }
 
-	  if guess >= 1 && guess <=  100 {
-		fmt.Println("The guess must be between 1 and 100 !")
-	 if guess < number {
-		fmt.Println("Too Low")
-	 }
-	 if guess > number {
-		fmt.Println("Too High")
-	 }
-	 if guess == number {
-		fmt.Println("Go it !")
-	 }
+// 	  if guess >= 1 && guess <=  100 {
+// 		fmt.Println("The guess must be between 1 and 100 !")
+// 	 if guess < number {
+// 		fmt.Println("Too Low")
+// 	 }
+// 	 if guess > number {
+// 		fmt.Println("Too High")
+// 	 }
+// 	 if guess == number {
+// 		fmt.Println("Go it !")
+// 	 }
 	
-	 fmt.Println(number<=guess, number>=guess, number!=guess) 
-	}
-	fmt.Println(true)
-}
+// 	 fmt.Println(number<=guess, number>=guess, number!=guess) 
+// 	}
+// 	fmt.Println(true)
+// }
 
+
+
+// func main (){
+// 	 number := 50
+// 	 guess := 990
+
+// 	 if guess < 1 || guess >  100 {
+// 		fmt.Println("The guess must be between 1 and 100 !")
+// 	 }
+
+// 	  if guess >= 1 && guess <=  100 {
+// 		fmt.Println("The guess must be between 1 and 100 !")
+// 	 if guess < number {
+// 		fmt.Println("Too Low")
+// 	 }
+// 	 if guess > number {
+// 		fmt.Println("Too High")
+// 	 }
+// 	 if guess == number {
+// 		fmt.Println("Go it !")
+// 	 }
+	
+// 	 fmt.Println(number<=guess, number>=guess, number!=guess) 
+// 	}
+// 	fmt.Println(true)
+// }
+
+
+func main () {
+	switch 5 {
+	case 1, 5, 10:
+		fmt.Println("one, five or ten")
+	
+	case 2, 4, 6:
+		fmt.Println("two, four or six")
+	
+	default:
+		fmt.Println("another number")
+	}
+}
