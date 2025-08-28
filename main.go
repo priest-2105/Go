@@ -282,21 +282,54 @@ import (
 // 	fmt.Println(d)
 // 	fmt.Println(e)
 // }
-func main() {
-	// statePoplations := make(map[string]int, 10)
-	statePoplations := map[string]int{
-		"California": 39250017,
-		"Texas": 39250017,
-		"Florida": 39250017,
-		"New York": 39250017,
-		"Peennsylvania": 39250017,
-		"Illinois": 39250017,
-		"Ohio": 39250017,
+// func main() {
+// 	// statePoplations := make(map[string]int, 10)
+// 	statePoplations := map[string]int{
+// 		"California": 39250017,
+// 		"Texas": 39250017,
+// 		"Florida": 39250017,
+// 		"New York": 39250017,
+// 		"Peennsylvania": 39250017,
+// 		"Illinois": 39250017,
+// 		"Ohio": 39250017,
+// 	}
+// 	// m := map[[3]int]string{}
+// 	// delete(statePoplations, "Georgia")
+// 	// fmt.Println(statePoplations)
+// 	// fmt.Println(statePoplations["Georgia"])
+// 	pop , ok := statePoplations["Ohio"]
+// 	fmt.Println(pop, ok)
+// }
+
+// func main() {
+// 	if true {
+// 		fmt.Println("The test is true")
+// 	}
+// }
+
+
+func main (){
+	 number := 50
+	 guess := 990
+
+	 if guess < 1 || guess >  100 {
+		fmt.Println("The guess must be between 1 and 100 !")
+	 }
+
+	  if guess >= 1 && guess <=  100 {
+		fmt.Println("The guess must be between 1 and 100 !")
+	 if guess < number {
+		fmt.Println("Too Low")
+	 }
+	 if guess > number {
+		fmt.Println("Too High")
+	 }
+	 if guess == number {
+		fmt.Println("Go it !")
+	 }
+	
+	 fmt.Println(number<=guess, number>=guess, number!=guess) 
 	}
-	// m := map[[3]int]string{}
-	// delete(statePoplations, "Georgia")
-	// fmt.Println(statePoplations)
-	// fmt.Println(statePoplations["Georgia"])
-	pop , ok := statePoplations["Ohio"]
-	fmt.Println(pop, ok)
+	fmt.Println(true)
 }
+
