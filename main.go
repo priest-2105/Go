@@ -374,10 +374,40 @@ import (
 // 	}
 // }
 
-func main () {
+// func main () {
 
-	for i, j := 0, 0; i < 5; i, j = i+1, j+1 {
-		 fmt.Println(i, j)
+// 	for i, j := 0, 0; i < 5; i, j = i+1, j+1 {
+// 		 fmt.Println(i, j)
+// 	}
+
+// }
+
+// func main () {
+// 	for i := 0; i < 5; i++ {
+// 		fmt.Println(i)
+// 			if i%2 == 0 {
+// 					i /=2
+// 			} else {
+// 					i = 2*1 + 1
+// 		}
+//  }
+
+// }
+
+// func main () {
+// 	i := 0
+// 	for ; i < 5; i++ {
+// 		fmt.Println(i)
+//  }
+// }
+
+func main (){
+	s := [3]int{1, 2, 3}
+	for k, v := range s {
+		fmt.Println(k, v)
 	}
-
 }
+
+// func main ( {
+// 	statePopulations := 
+// })
