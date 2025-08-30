@@ -1,8 +1,10 @@
 package main
 
 import (
-	"fmt"
-	// "strconv"
+	// "fmt"
+	// "io/ioutil"
+	// "log"
+	"net/http"
 )
 
 // var i float32 = 42
@@ -239,7 +241,6 @@ import (
 // 	fmt.Printf("Number of Student: %v\n", len(students))
 // }
 
-
 // func main() {
 // 	a := [...]int{1, 2, 3}
 // 	b := a
@@ -248,7 +249,6 @@ import (
 // 	fmt.Println(b)
 // }
 
-
 // func main() {
 // 	a := [...]int{1, 2, 3}
 // 	b := &a
@@ -256,7 +256,6 @@ import (
 // 	fmt.Println(a)
 // 	fmt.Println(b)
 // }
-
 
 // func main() {
 // 	a := []int{1, 2, 3}
@@ -267,7 +266,6 @@ import (
 // 	fmt.Printf("Length: %v\n", len(a))
 // 	fmt.Printf("Capacity: %v\n", cap(a))
 // }
-
 
 // func main () {
 // 	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
@@ -307,6 +305,30 @@ import (
 // 	}
 // }
 
+// func main (){
+// 	 number := 50
+// 	 guess := 990
+
+// 	 if guess < 1 || guess >  100 {
+// 		fmt.Println("The guess must be between 1 and 100 !")
+// 	 }
+
+// 	  if guess >= 1 && guess <=  100 {
+// 		fmt.Println("The guess must be between 1 and 100 !")
+// 	 if guess < number {
+// 		fmt.Println("Too Low")
+// 	 }
+// 	 if guess > number {
+// 		fmt.Println("Too High")
+// 	 }
+// 	 if guess == number {
+// 		fmt.Println("Go it !")
+// 	 }
+
+// 	 fmt.Println(number<=guess, number>=guess, number!=guess)
+// 	}
+// 	fmt.Println(true)
+// }
 
 // func main (){
 // 	 number := 50
@@ -327,48 +349,20 @@ import (
 // 	 if guess == number {
 // 		fmt.Println("Go it !")
 // 	 }
-	
-// 	 fmt.Println(number<=guess, number>=guess, number!=guess) 
+
+// 	 fmt.Println(number<=guess, number>=guess, number!=guess)
 // 	}
 // 	fmt.Println(true)
 // }
-
-
-
-// func main (){
-// 	 number := 50
-// 	 guess := 990
-
-// 	 if guess < 1 || guess >  100 {
-// 		fmt.Println("The guess must be between 1 and 100 !")
-// 	 }
-
-// 	  if guess >= 1 && guess <=  100 {
-// 		fmt.Println("The guess must be between 1 and 100 !")
-// 	 if guess < number {
-// 		fmt.Println("Too Low")
-// 	 }
-// 	 if guess > number {
-// 		fmt.Println("Too High")
-// 	 }
-// 	 if guess == number {
-// 		fmt.Println("Go it !")
-// 	 }
-	
-// 	 fmt.Println(number<=guess, number>=guess, number!=guess) 
-// 	}
-// 	fmt.Println(true)
-// }
-
 
 // func main () {
 // 	switch 5 {
 // 	case 1, 5, 10:
 // 		fmt.Println("one, five or ten")
-	
+
 // 	case 2, 4, 6:
 // 		fmt.Println("two, four or six")
-	
+
 // 	default:
 // 		fmt.Println("another number")
 // 	}
@@ -401,13 +395,60 @@ import (
 //  }
 // }
 
-func main (){
-	s := [3]int{1, 2, 3}
-	for k, v := range s {
-		fmt.Println(k, v)
-	}
-}
+// func main (){
+// 	s := [3]int{1, 2, 3}
+// 	for k, v := range s {
+// 		fmt.Println(k, v)
+// 	}
+// }
 
 // func main ( {
-// 	statePopulations := 
+// 	statePopulations :=
 // })
+
+// func main() {
+// 	defer fmt.Println("start")
+// 	defer fmt.Println("middle")
+// 	defer fmt.Println("end")
+// }
+
+// func main() {
+// 	res, err := http.Get("http://www.google.com/robots.txt")
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+// 	defer res.Body.Close()
+// 	robots, err := ioutil.ReadAll(res.Body)
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+// 	fmt.Printf("%s", robots)
+// }
+
+// func main() {
+// 	a := "start"
+// 	defer fmt.Println(a)
+// 	a = "end"
+// }
+
+// func main() {
+// 	a, b := 1, 0
+// 	ans := a / b
+// 	fmt.Println(ans)
+// }
+
+// func main() {
+// 	fmt.Println("start")
+// 	panic("something bad happend")
+// 	fmt.Println("end")
+// }
+
+func main() {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+         w.Write([]byte("Hello Go !"))
+	})
+	err :=http.ListenAndServe(":8080", nil)
+	if err != nil {
+		panic(err.Error())
+	}
+}
