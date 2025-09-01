@@ -462,9 +462,39 @@ import (
 // 	fmt.Println(a, *b)
 // }
 
-func main(){	
-	a := [3]int{1, 2, 3}
-	b := &a[0]
-	c := &a[1]
-	fmt.Printf("%v %p %p\n", a, b, c)
+// func main(){	
+// 	a := [3]int{1, 2, 3}
+// 	b := &a[0]
+// 	c := &a[1]
+// 	fmt.Printf("%v %p %p\n", a, b, c)
+// }
+
+// func main() {
+// 	sayMessage("Hello go")
+// }
+
+
+// func sayMessage(msg string){
+// 	fmt.Println(msg)
+// }
+
+// func main() {
+// 	for i := 0; i < 5; i++ {
+// 		sayMessage("Hello Go !", i)
+// 	}
+// }
+
+// func sayMessage(msg string, idx int) {
+// 	fmt.Println(msg)
+// 	fmt.Println("Thevalue of the index is ", idx)
+// }
+
+
+
+func main() {
+	sayGreeting("Hello", "Stacey")
+}
+
+func sayGreeting(greeting, name string) {
+	fmt.Println(greeting, name)
 }
