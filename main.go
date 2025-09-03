@@ -5,6 +5,9 @@ import (
 	// "io/ioutil"
 	// "log"
 	"fmt"
+	"runtime"
+	// "sync"
+	// "time"
 )
 
 // var i float32 = 42
@@ -453,7 +456,6 @@ import (
 // 	}
 // }
 
-
 // func main(){
 // 	var a int = 42
 // 	var b *int = &a
@@ -462,7 +464,7 @@ import (
 // 	fmt.Println(a, *b)
 // }
 
-// func main(){	
+// func main(){
 // 	a := [3]int{1, 2, 3}
 // 	b := &a[0]
 // 	c := &a[1]
@@ -472,7 +474,6 @@ import (
 // func main() {
 // 	sayMessage("Hello go")
 // }
-
 
 // func sayMessage(msg string){
 // 	fmt.Println(msg)
@@ -489,8 +490,6 @@ import (
 // 	fmt.Println("Thevalue of the index is ", idx)
 // }
 
-
-
 // func main() {
 // 	sayGreeting("Hello", "Stacey")
 // }
@@ -499,21 +498,48 @@ import (
 // 	fmt.Println(greeting, name)
 // }
 
+// func main() {
+// 	var w Writer = ConsoleWriter{}
+// 	w.Write([]byte("Hello Go !"))
+// }
+
+// type Writer interface {
+// 	Write([]byte) (int, error)
+// }
+
+// type ConsoleWriter struct {}
+
+// func(cw ConsoleWriter) Write(data []byte) (int, error) {
+// 	n, err := fmt.Println((string(data)))
+// 	return n, err
+// }
+
+// GO ROUTINE
+
+// func main(){
+// 	go sayHello()
+// 	time.Sleep(100 * time.Millisecond)
+// }
+
+// func sayHello(){
+// 	fmt.Println("Hello")
+// }
+
+// var wg = sync.WaitGroup{}
+
+// func main() {
+// 	var msg = "Hello"
+// 	wg.Add(1)
+// 	go func(msg string){
+// 		fmt.Println(msg)
+// 		wg.Done()
+// 	}(msg)
+// 	msg = "Goodbye"
+// 	wg.Wait()
+// }
+
 
 func main() {
-	var w Writer = ConsoleWriter{}
-	w.Write([]byte("Hello Go !"))
+	runtime.GOMAXPROCS(100)
+	fmt.Printf("Threads: %v\n", runtime.GOMAXPROCS(-1))
 }
-
-type Writer interface {
-	Write([]byte) (int, error)
-}
-
-type ConsoleWriter struct {}
-
-func(cw ConsoleWriter) Write(data []byte) (int, error) {
-	n, err := fmt.Println((string(data)))
-	return n, err
-}
-
-
