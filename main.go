@@ -6,6 +6,7 @@ import (
 	// "log"
 	"fmt"
 	"runtime"
+	"sync"
 	// "sync"
 	// "time"
 )
@@ -538,8 +539,30 @@ import (
 // 	wg.Wait()
 // }
 
+// func main() {
+// 	runtime.GOMAXPROCS(100)
+// 	fmt.Printf("Threads: %v\n", runtime.GOMAXPROCS(-1))
+// }
+
+
+
+
+
+var wg = sync.WaitGroup{}
 
 func main() {
-	runtime.GOMAXPROCS(100)
-	fmt.Printf("Threads: %v\n", runtime.GOMAXPROCS(-1))
+	ch := make(chan int)
+	wg.Add(2)
+	go func(){
+		i := <- ch 
+		fmt.Println(i)
+		wg.Done()
+	}()
+		go func() {
+			i := 42
+			ch <- i
+			i = 27
+			wg.Done()
+		}()
+	wg.Wait()
 }
